@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the paper and this versioned replication package."
+title: "Beyond %Resolved:Reassessing SWE-bench Through Human and LLM Code Review"
+type: software
+version: "v25c-artifact"
+repository-code: "https://github.com/myoungmuk/icse2027-6658-v25c"
+url: "https://github.com/myoungmuk/icse2027-6658-v25c/tree/v25c-artifact"
+authors:
+  - family-names: Kang
+    given-names: Myeongmuk
+    orcid: "https://orcid.org/0009-0002-5351-0269"
+  - family-names: Yang
+    given-names: Geunseok
+    orcid: "https://orcid.org/0000-0001-5677-5129"

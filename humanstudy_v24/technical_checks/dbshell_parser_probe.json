@@ -1,0 +1,41 @@
+{
+  "issue": "django__django-15851",
+  "probe": "Command.create_parser and parse_args only",
+  "variants": {
+    "base": {
+      "source": "regression_audit_v11/experiment/sources/django__django-15851/base/django/core/management/commands/dbshell.py",
+      "sha256": "5d60711d02315f329dfe8f353f19a638257aed53dca9b0ebf549dde8b100b7d4",
+      "status": "returned",
+      "parameters": [
+        "--help"
+      ]
+    },
+    "candidate": {
+      "source": "regression_audit_v11/experiment/sources/django__django-15851/candidate/django/core/management/commands/dbshell.py",
+      "sha256": "7601c13c33db542b0f465a623ba44e8868ac109d0343921322eab2ca8624f317",
+      "status": "exception",
+      "exception": "NameError",
+      "message": "name 'argparse' is not defined"
+    },
+    "developer": {
+      "source": "regression_audit_v11/experiment/sources/django__django-15851/developer/django/core/management/commands/dbshell.py",
+      "sha256": "5d60711d02315f329dfe8f353f19a638257aed53dca9b0ebf549dde8b100b7d4",
+      "status": "returned",
+      "parameters": [
+        "--help"
+      ]
+    },
+    "candidate_import_diagnostic": {
+      "source": "regression_audit_v11/experiment/sources/django__django-15851/candidate/django/core/management/commands/dbshell.py",
+      "sha256": "7601c13c33db542b0f465a623ba44e8868ac109d0343921322eab2ca8624f317",
+      "status": "returned",
+      "parameters": [
+        "--",
+        "--help"
+      ]
+    }
+  },
+  "original_result_files_modified": false,
+  "dbshell_or_database_started": false,
+  "limit": "The injected-import variant is diagnostic. It does not test the backend argument order."
+}

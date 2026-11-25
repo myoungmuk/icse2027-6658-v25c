@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-11-20",
+  "meaning": "Git commit times of the commits containing archived hosted-reviewer verdict JSON; verdict files in each commit match the preserved files byte for byte. These are archival times, not request times.",
+  "commits": [
+    {
+      "records": "first verdicts compared with the author pilot",
+      "verdict_files": 40,
+      "commit_time_utc": "2026-06-30T17:33:43Z",
+      "commit": "27717dddedd01cf0f3dbcfc67ccfae60b3d56306"
+    },
+    {
+      "records": "Verified, interim cumulative",
+      "verdict_files": 234,
+      "commit_time_utc": "2026-06-30T18:27:20Z",
+      "commit": "5bce3b280ff9ddf50166214405b51a7afdaa316b"
+    },
+    {
+      "records": "Verified, complete",
+      "verdict_files": 388,
+      "commit_time_utc": "2026-07-01T07:26:42Z",
+      "commit": "dec8b34bb0e4b2fc4d0ae2ce83e6de44704099d2"
+    },
+    {
+      "records": "failing control, interim cumulative",
+      "verdict_files": 72,
+      "commit_time_utc": "2026-07-01T08:44:58Z",
+      "commit": "094def200bb7f905b934364ff424b5b9903ce3cf"
+    },
+    {
+      "records": "failing control, complete",
+      "verdict_files": 81,
+      "commit_time_utc": "2026-07-01T09:22:07Z",
+      "commit": "d53fcc6ef8cef0c4f3a0e05095d28ed58f1f4cb8"
+    }
+  ],
+  "rows_are_cumulative_not_additive": true,
+  "author_reported_model": "Claude Opus 4.8",
+  "archive_top_level_recorded_execution_metadata_count": 0,
+  "archive_cli_has_explicit_model_flag": false,
+  "machine_recorded_exact_request_dates": false
+}
